@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="AGASTYA WEB PORTAL">
+        <meta name="author" content="Shantanu Gupta">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AGASTYA</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- JAVASCRIPT  -->
+        <script src="./js/script.js"></script>
+        <script src="./js/image.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <!-- Background Image -->
+        <!-- <div class="bg-image"></div> -->
+
+        <!-- header -->`
+        <header id='header'>
+          <!-- <div class='logo'>Logo</div> -->
+          <div class="logo">
+            <img src="./images/logo.png" class="logo-img" alt="logo">
+          </div>
+          <p class="headline">AGASTYA</p>
+
+          <!-- <nav>
+            <ul class='navbar'>
+              <li><a href="#"></a></li>
+            </ul>
+          </nav> -->
+          
+          <form action="/logout">
+              <!-- <a href="#" class="sign-in">
+                  <button type="submit" value="logout" onclick="onLogOutClick()" class="btn-contact">Sign Out</button>
+              </a> -->
+          </form>
+        </header>   
+        <!-- header close -->
+        <div class="main-container">
+            <!-- container 1 -->
+            <div class="block-container1">
+                <div class="image-container">
+                    <!-- Images -->
+                    <img src="./Assets/cover.jpg" alt="doctor" class="image-container">
+                </div>
+                <div class="container">
+                    <div class="web-headline">
+                        <h2><span class="text-heading">AGASTYA</span>: COVID ANALYSIS WEB FORM</h2>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Container 2 -->
+            <div class="block-container2">
+                <div class="container">
+                    <div class="patient-headline">
+                        Patient Details Form
+                    </div>
+                    <form action="https://ritikkanotra.000webhostapp.com/agastya/register.php" method="post" enctype="multipart/form-data">
+                        <!-- Patient Name -->
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="fname">Patient Full Name</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="fname" name="name" placeholder="Patient full name.." required>
+                        </div>
+                      </div>
+                       <!-- Patient Email -->
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="email">Patient Email</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="fname" name="email" placeholder="Patient email.." required>
+                        </div>
+                      </div>
+                      <!-- Patient ID -->
+                      <!-- <div class="row">
+                        <div class="col-25">
+                          <label for="patientID">Patient ID</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="patientid" name="patientid" placeholder="Patient Patient id" required>
+                        </div>
+                      </div> -->
+                      <!-- Contact Number -->
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="contact">Contact Number</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="number" id="contact" name="phone" placeholder="Patient Contact Number" required>
+                        </div>
+                      </div>
+                      <!-- Address -->
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="Address">Address</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="address" name="address" placeholder="Patient Address" required>
+                        </div>
+                      </div>
+                      <!-- Reference Number -->
+                      <!-- <div class="row">
+                        <div class="col-25">
+                          <label for="Reference-Number">Reference Number</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="reference-number" name="reference-umber" placeholder="Patient Reference Number" required>
+                        </div>
+                      </div> -->
+                      <!-- Age/ Gender -->
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="age-gender">Age/ Gender</label>
+                        </div>
+                        <div class="gender">
+                            <input type="number" id="age" name="age" placeholder="Age" required>
+                         </div>
+                        <div class="dropdown">
+                          <select id="gender" name="gender" required>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="O">Other</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- X-Ray Type -->
+                      <!-- <div class="row">
+                        <div class="col-25">
+                          <label for="X-Ray-Type">X-Ray Type</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="x-ray-type" name="x-ray-type" placeholder="X-Ray type" required>
+                        </div>
+                      </div> -->
+                      <!-- Upload Text Name -->
+                      <div class="row">
+                            <div class="col-25">
+                                <label for="image-name">Upload Image File</label>
+                            </div>
+                            <div class="col-75">
+                                <input name="fileToUpload" id="fileToUpload" type="file" required>
+                            </div>
+                      </div>
+                      <div class="row">
+                        <a href="#" class="Submit">
+                            <button name=submit" class="btn-submit">SUBMIT</button>
+                          </a>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+        </div>
+        <!-- logout script -->
+        <script>
+          function onLogOutClick() {
+              //delete cookie:
+              document.cookie = "userData=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          }
+      </script>
+    </body>
+</html>
